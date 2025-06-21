@@ -28,7 +28,7 @@ Implementation:
 12. If it is write operation on the memory. master will send the 8 bit data to slave in SDA on 8 SCL.   
 13. After receiving this data slave will send ack for the received data.   
 14. Finally the stop transaction is send from the master to slave.   
-15. slave will detect the stop from master and stop.
+15. slave will detect the stop from master and stop.   
     ![image](https://github.com/user-attachments/assets/efd58c9b-6a16-4d93-8576-e069aaf6098c)
 
 
