@@ -15,6 +15,7 @@ Implementation:
 2. The time period of SCL is divided into 4 parts called pulses.
 3. master initiate the transaction by start(scl -> high throughout time period. sda is made 1100 for (pulse 0..3)).
    ![image](https://github.com/user-attachments/assets/aa4e02d6-464e-432e-a8a1-b96c4d46265d)
+      
    For one time period of SCL   
 5. After sending start operation(R/W') followed by 7 bit address.   
    ![image](https://github.com/user-attachments/assets/b0ebc840-5f4d-4039-a8b2-513ca6115127)
