@@ -35,7 +35,8 @@ eda_playground link : https://www.edaplayground.com/x/YT7i
 11. If it is write operation on the memory. master will send the 8 bit data to slave in SDA on 8 SCL.   
 12. After receiving this data slave will send ack for the received data.  
 13. Finally the stop transaction is send from the master to slave.   
-14. slave will detect the stop from master and stop.  
+14. slave will detect the stop from master and stop.
+    
 <div align="center">  
    <image src = "https://github.com/user-attachments/assets/efd58c9b-6a16-4d93-8576-e069aaf6098c">  
 </div>
