@@ -15,10 +15,10 @@ eda_playground link : https://www.edaplayground.com/x/YT7i
 1. In the single time period of SCL we send one bit.
 2. The time period of SCL is divided into 4 parts called pulses.
 3. Master initiate the transaction by start(scl -> high throughout time period. sda is made 1100 for (pulse 0..3)).
-<div align="center">
-<image src = "https://github.com/user-attachments/assets/aa4e02d6-464e-432e-a8a1-b96c4d46265d">  
-</div>  
-  For one time period of SCL     
+4. <div align="center">
+  <image src = "https://github.com/user-attachments/assets/aa4e02d6-464e-432e-a8a1-b96c4d46265d">  
+  </div>  
+    For one time period of SCL     
 4. After sending start, operation(R/W') bit followed by 7 bit address is send in 8 SCL period.   
 <div align="center">
 <image src = "https://github.com/user-attachments/assets/b0ebc840-5f4d-4039-a8b2-513ca6115127">  
