@@ -17,22 +17,22 @@ eda_playground link : https://www.edaplayground.com/x/YT7i
 3. Master initiate the transaction by start(scl -> high throughout time period. sda is made 1100 for (pulse 0..3)).
 <div align="center">
 <image src = "https://github.com/user-attachments/assets/aa4e02d6-464e-432e-a8a1-b96c4d46265d">  
-</div>
+</div>  
   For one time period of SCL     
 4. After sending start, operation(R/W') bit followed by 7 bit address is send in 8 SCL period.   
 <div align="center">
 <image src = "https://github.com/user-attachments/assets/b0ebc840-5f4d-4039-a8b2-513ca6115127">  
-</div>  
+</div>    
 5. The SDA line is pulled according to the op code and address bit at pulse 1. SCL is same for all bit transaction as in above figure.   
-6. It will wait for Addr_ack from slave in next SCL after sending address bits.   
-7. if ack received in master it will go to state of READ OR WRITE based on operation.   
-8. For read the memory will send the 8 bit data to the master in SDA on 8 SCL.   
-9. Master will sample the SDA line at pulse 2, capture this 8 bit data.      
-10. After receiving the data master will send the ACK.   
-11. If it is write operation on the memory. master will send the 8 bit data to slave in SDA on 8 SCL.   
-12. After receiving this data slave will send ack for the received data.   
-13. Finally the stop transaction is send from the master to slave.   
-14. slave will detect the stop from master and stop.
+6. It will wait for Addr_ack from slave in next SCL after sending address bits.    
+7. if ack received in master it will go to state of READ OR WRITE based on operation.     
+8. For read the memory will send the 8 bit data to the master in SDA on 8 SCL.     
+9. Master will sample the SDA line at pulse 2, capture this 8 bit data.        
+10. After receiving the data master will send the ACK.     
+11. If it is write operation on the memory. master will send the 8 bit data to slave in SDA on 8 SCL.  
+12. After receiving this data slave will send ack for the received data.  
+13. Finally the stop transaction is send from the master to slave.  
+14. slave will detect the stop from master and stop.  
 <div align="center">  
 <image src = "https://github.com/user-attachments/assets/efd58c9b-6a16-4d93-8576-e069aaf6098c">  
 </div>
